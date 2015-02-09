@@ -5,10 +5,99 @@
         <description>Jekyll Bootstrap - Name Lastname</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2015-01-29T13:19:16+08:00</lastBuildDate>
-        <pubDate>2015-01-29T13:19:16+08:00</pubDate>
+        <lastBuildDate>2015-02-09T13:15:59+08:00</lastBuildDate>
+        <pubDate>2015-02-09T13:15:59+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>怎样共享iPhone的屏幕以及录制screenshot</title>
+                <description>
+&lt;p&gt;通过QuickPlayer把iPhone屏幕显示到Mac机器上，windows机器上也有QuickPlayer，但是能不能用没有验证过。&lt;/p&gt;
+
+&lt;p&gt;具体步骤如下:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;iPhone通过USB连接Mac电脑  &lt;/li&gt;
+  &lt;li&gt;打开QuickPlayer，点击File-&amp;gt;New Movie Recording.&lt;/li&gt;
+  &lt;li&gt;在录制界面右下角有个圆圈按钮，点击然后摄像头选择你的iPhone.&lt;/li&gt;
+  &lt;li&gt;把iPhone屏幕解锁，你应该可以看到iPhone的屏幕了。&lt;/li&gt;
+  &lt;li&gt;实际上你可以开始录制预览视频了，做演示的时候非常有用。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;参考:
+&lt;a href=&quot;http://www.waerfa.com/how-to-manage-pic-in-yosemite-and-ios-8&quot;&gt;如何利用 Yosemite + iOS 8.1更高效的管理图片&lt;/a&gt;&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2015/02/05/howtoshareiphonescreen</link>
+                <guid>http://username.github.io/2015/02/05/howtoshareiphonescreen</guid>
+                <pubDate>2015-02-05T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>贫民窟的苹果开发环境</title>
+                <description>
+&lt;h4 id=&quot;section&quot;&gt;开篇&lt;/h4&gt;
+&lt;p&gt;我们又一款伟大的移动产品马上要轰动世界了，项目暂时告一段落。在这心情愉悦的日子里，我想来喷一喷苹果的开发环境。&lt;/p&gt;
+
+&lt;p&gt;从一脚踏入iOS开发开始，苹果的开发环境在我眼中一直就是一种亚原始生产环境。苹果开发环境的恶劣归结到底为下面两个方面:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;给苹果Mac开发软件的供应商少，第三方软件奇缺&lt;/li&gt;
+  &lt;li&gt;苹果平台的技术积累不够，至少落后了某竞争对手10年&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;第三方软件奇缺&lt;/h4&gt;
+&lt;p&gt;这个没有什么好说的，明眼人都看得到。无论是办公还是开发，上手Mac以后第一件事情肯定是不知所措，满世界找能用的软件。&lt;/p&gt;
+
+&lt;p&gt;不要跟我说Mac上面有office&lt;/p&gt;
+
+&lt;p&gt;Mac上的office是因为合同限制下ms给开发出来的，不是苹果自己开发的，你会帮竞争对手把一款产品开发的非常完美么？&lt;/p&gt;
+
+&lt;p&gt;我记得我上手Mac后的第一件事情是找一款免费好用的文本编辑器，苦苦搜寻了几天，嫩是毛没有搜寻到！不要跟我说现在Sublime, Textmate现在都可以免费用了，那是现在，回退几年你试试？不要跟我说你有钱，啥都掏钱买，作为消费者，便宜实用才是王道。&lt;/p&gt;
+
+&lt;p&gt;Windows上面无论是办公软件还是日常应用，娱乐，游戏还是支付，各种硬件驱动，以前应有尽有，还有无数免费开源的优秀软件。&lt;/p&gt;
+
+&lt;p&gt;到了Mac平台上，只能眼巴巴的望着windows用户用。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;苹果平台技术落后&lt;/h4&gt;
+&lt;p&gt;肯定不少人看到上面第二条早就忍不住想喷了:xcode不牛逼吗？Instruments不牛逼吗？LLVM不牛逼吗？iOS不牛逼吗？&lt;/p&gt;
+
+&lt;p&gt;别急，我来告诉你真像.&lt;/p&gt;
+
+&lt;p&gt;首先，作为在iOS平台上生产了n年shit的过来人，我实话告诉你，iOS/Mac平台程序员生产效率奇低，这是平台的原因，不是人才的原因。本人体会如下:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;调试技术非常落后。xcode 6(2014)之前，xcode一直没有界面live preview，变量live preview像个玩具，基本上不能用。至今为止我没有找到好的iOS dump分析的方法。网络调试工具自家完全没有。&lt;/li&gt;
+  &lt;li&gt;界面布局技术特立独行(低效)。最开始Autoresize的时候还能勉强接受，不牛逼，但是大部分情况下够用,不够用了就徒手写代码布局，后来搞了个autolayout，产量瞬间下去了，不好修改，不好调试，还不如autoresize来得简洁。多人协作编辑storyboard简直是灾难，merge那个痛苦谁用谁知道。难道苹果的技术人员不知道这世界上有CSS, WPF等先进的布局技术可以借鉴么？&lt;/li&gt;
+  &lt;li&gt;有人夸苹果的开发文档好，我只能呵呵了。没见过好的文档的人说这话我表示理解。&lt;/li&gt;
+  &lt;li&gt;网络上样例代码少，相关的技术文章也少。我做一个很简单的Mac上面图片居中显示加缩放的小功能，翻遍了苹果官方的样例代码，搜遍了baidu(shit,换了一个不能上google的环境，没办法),搜遍了github，问题至今未能很好地解决。就是一个小小的布局问题啊，哥！&lt;/li&gt;
+  &lt;li&gt;架构落后。总有人会在你面前夸耀iOS的MVC架构多么简洁，多么专一。我只想说: Fuck Shit! 你有研究过MVC适用什么样的场景么？在轻量级的移动客户端界面开发场景里跟我吹MVC，some times too young too simple，too naive! &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;回到xcode, instruments, LLVM的讨论. &lt;/p&gt;
+
+&lt;p&gt;如果你知道project builder, Interface Builder, 你肯定对Xcode崇拜不起来，如果你用了Xcode 6, 用过里面的view debugging，你肯定为它crash的频率抓狂过，它不应该叫xcode，应该叫xcrash。Instruments确实是一个了不起的工具，但是如果把DTrace拿走，它狗屎都不是。DTrace是哪家的？Sun开源出来的。LLVM，这是个值得称道的东西，确实！&lt;/p&gt;
+
+&lt;p&gt;我曾经在网上听人说苹果是开源大户，真的是匪夷所思！你去&lt;a href=&quot;http://opensource.apple.com&quot;&gt;苹果官方开宇列表&lt;/a&gt;翻翻,看有几个项目你没有在linux世界里面见到过。它完全自家开源的那几个产品要么是早过时，n年不维护了，要不就是功能极其简单，二次开发难度极大，DSS就是一个例子。能拿出来吹嘘的估计也就剩下个LLVM了。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;平台斯德哥尔摩症&lt;/h4&gt;
+&lt;p&gt;每次苹果推出个新的功能，总有人到处吹嘘。殊不知，很多苹果新推出的功能早在别的平台用烂了。&lt;/p&gt;
+
+&lt;p&gt;如果有人说苹果怎么不提供者功能那功能(或技术)，又会有人站出来誓死捍卫:这是简单，极致！&lt;/p&gt;
+
+&lt;p&gt;拉倒吧，我开发iOS这么多年，被逼造了无数的轮子，哪里感觉这是简单极致，这就是平台做不到，咱开发者/用户只能这样将就！&lt;/p&gt;
+
+&lt;p&gt;哥不是要贬低苹果，只是说，看清它的缺陷和不足之前别随意夸奖它！别做个斯德哥尔摩症患者。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-4&quot;&gt;结尾&lt;/h4&gt;
+&lt;p&gt;求求各位达人不要再随意夸苹果的技术了，还是多批评，多提意见，让这个平台更好点，对开发者更有好点！&lt;/p&gt;
+
+&lt;p&gt;最后，会在Mac上配置环境的程序员才是最牛逼的程序员！竞争对手在windows发布第一个版本的时候我就搭建好Mac开发环境了，噢耶！&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2015/02/05/fuckingappleide</link>
+                <guid>http://username.github.io/2015/02/05/fuckingappleide</guid>
+                <pubDate>2015-02-05T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>多github账号切换</title>
