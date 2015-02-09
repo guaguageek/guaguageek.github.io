@@ -29,3 +29,10 @@ tagline: 技术吐槽哥
 
 ## 我是谁
 我是谁不重要，重要的是我说的东西是否在你身边发生，是否对你有帮助。
+
+## 吐槽列表
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
