@@ -1,46 +1,31 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Guagua Geek
+tagline: 技术吐槽哥
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+欢迎来到Guagua吐槽哥的地盘，这里专注于技术吐槽，绿色无污染，人畜无害的吐槽博客！
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+## 吐槽的内容
 
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
+目前只吐槽本人开发中遇到的问题，评价相关的平台和技术。
     
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+## 吐槽的对象
+除非点名，本站的吐槽不带任何特指，仅限于自鉴。
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+## 吐槽的目的
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+如果一个人不能理性对待负面的评价，那么这个人是很难意识到自己的问题的，他的自我定位和自我改进都会遇到问题。
 
-    $ rm -rf _posts/core-samples
+如果一个人不能从正反两方面客观的评估一件事物，一个技术，那么这个人对这件事的认知是有问题的。
 
-Here's a sample "posts list".
+我吐槽只是想保持对人和事的清醒认识，伤害别人的感情绝对不是我的目的，请勿对号入座。
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+我也只是从自己有限的认知角度来评价一些东西，局限性和实效性请读者自己把握。
 
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+欢迎一起吐槽，不接受恶意的讨论，谢谢！
 
 
+## 我是谁
+我是谁不重要，重要的是我说的东西是否在你身边发生，是否对你有帮助。
