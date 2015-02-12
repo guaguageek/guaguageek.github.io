@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Guagua Geek</title>
-    
+    <title>软件开发之DRY</title>
+    <meta name="description" content="">
     <meta name="author" content="Name Lastname">
 
     <!-- Enable responsive viewport -->
@@ -130,52 +130,78 @@
       <div class="container">
         
 <div class="page-header">
-  <h1>Guagua Geek  <small>技术吐槽哥</small></h1>
+  <h1>软件开发之DRY </h1>
 </div>
 
-<div class="row">
+<div class="row post-full">
   <div class="col-xs-12">
+    <div class="date">
+      <span>12 February 2015</span>
+    </div>
+    <div class="content">
+      
+<h4 id="dry-dont-repeat-it-yourself">DRY (Don’t Repeat it Yourself)</h4>
+<p>DRY, 软件开发原则经典之一。</p>
+
+<p>它建议我们能不造轮子就不要造轮子。因为造轮子的负面影响太多:</p>
+
+<ol>
+  <li>最直接的是造轮子时间成本的付出. </li>
+  <li>造轮子的过程中我们会引入很多的坑，填空是另外一个巨大的成本.</li>
+  <li>开始造轮子之前还是建议你想清楚，轮子不是你想造就能造得好的，设计能力，专业知识和经验都直接影响你轮子的好坏。</li>
+</ol>
+
+<p>今天我就想说一说我们日常遇到的DRY问题。</p>
+
+<h4 id="dry">DRY平台之过</h4>
+<p>在iOS开发中最经常遇到的事情是很多很简单的功能系统没有或者不让做，于是乎造轮子成了这个平台最常见的现象。</p>
+
+<p>很多简单的功能你在github上一搜能搜出一大堆开源代码，实现大同小异，坑大坑小各不相同。这不能怪开原开发者，这是平台之过，苹果之过。苹果的SDK里面到处可见粗制滥造的设计，设计中到处会遇到大量的假设和一些magic number式的参数，不看文档极易踩坑里去。偏偏它文档简单，样例代码少，可检索性差,这也是iOS开发效率难上来的原因之一。</p>
+
+<p>iOS api设计上也不优雅实用，很多时候大家只能另外封装一层来加速开发，被逼着造轮子。</p>
+
+<p>这种情况下，还是建议大家开始造轮子之前尽量先去github搜一搜，找些现成的轮子用用，只要不是太烂，怎么着也比自己造来得省事。并且，大部分开源作者还是比较看重自己的名誉的，那些流行的开源库代码设计都是相当漂亮的。</p>
+
+<h4 id="dry-1">DRY开发者之过</h4>
+<p>因为经验上的缺乏或者对整个平台的理解不够透彻，有些开发者会抛开一些现有的解决方案不用而去自己去造一遍轮子。对于这种现象，只能通过想办法招更优质的开发者，或者加强培训来尽量避免其危害了。</p>
+
+    </div>
+
     
-<p>欢迎来到Guagua吐槽哥的地盘，这里专注于技术吐槽，绿色无污染，人畜无害的吐槽博客！</p>
 
-<h2 id="section">吐槽的内容</h2>
-
-<p>目前只吐槽本人开发中遇到的问题，评价相关的平台和技术。</p>
-
-<h2 id="section-1">吐槽的对象</h2>
-<p>除非点名，本站的吐槽不带任何特指，仅限于自鉴。</p>
-
-<h2 id="section-2">吐槽的目的</h2>
-
-<p>如果一个人不能理性对待负面的评价，那么这个人是很难意识到自己的问题的，他的自我定位和自我改进都会遇到问题。</p>
-
-<p>如果一个人不能从正反两方面客观的评估一件事物，一个技术，那么这个人对这件事的认知是有问题的。</p>
-
-<p>我吐槽只是想保持对人和事的清醒认识，伤害别人的感情绝对不是我的目的，请勿对号入座。</p>
-
-<p>我也只是从自己有限的认知角度来评价一些东西，局限性和实效性请读者自己把握。</p>
-
-<p>欢迎一起吐槽，不接受恶意的讨论，谢谢！</p>
-
-<h2 id="section-3">我是谁</h2>
-<p>我是谁不重要，重要的是我说的东西是否在你身边发生，是否对你有帮助。</p>
-
-<h2 id="section-4">吐槽列表</h2>
-<ul class="posts">
+    
   
-    <li><span>12 Feb 2015</span> &raquo; <a href="/2015/02/12/dry">软件开发之DRY</a></li>
-  
-    <li><span>05 Feb 2015</span> &raquo; <a href="/2015/02/05/howtoshareiphonescreen">怎样共享iPhone的屏幕以及录制screenshot</a></li>
-  
-    <li><span>05 Feb 2015</span> &raquo; <a href="/2015/02/05/fuckingappleide">贫民窟的苹果开发环境</a></li>
-  
-    <li><span>29 Jan 2015</span> &raquo; <a href="/2015/01/29/github">多github账号切换</a></li>
-  
-    <li><span>29 Jan 2015</span> &raquo; <a href="/2015/01/29/cfbundleversion">坑爹的苹果CFBundleVersion</a></li>
-  
-    <li><span>29 Dec 2011</span> &raquo; <a href="/lessons/2011/12/29/jekyll-introduction">Jekyll Introduction</a></li>
-  
-</ul>
+    <hr>
+    <ul class="pagination">
+    
+      <li class="prev"><a href="/2015/02/05/howtoshareiphonescreen" title="怎样共享iPhone的屏幕以及录制screenshot">&laquo; Previous</a></li>
+    
+      <li><a href="/archive.html">Archive</a></li>
+    
+      <li class="next disabled"><a>Next &rarr;</a>
+    
+    </ul>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
 
   </div>
 </div>
